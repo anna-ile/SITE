@@ -6,37 +6,36 @@
     <meta charset="utf-8">
     <script scr="jquery.js"></script>
         <style>
+        <script>
+            $(ducument).ready(funcion (){
+                alert("funcionou");
+
+            });
+            </script>
+            <style> 
             .site{
                 width:940px;
                 height:600px;
-                border:2px solid rgb(0, 0, 0);
-                padding:0px;
+                
             }
             .header{
                 width:938px;
                 height:50px;
-                border:2px solid rgb(0, 0, 0);
-                padding:0px;
                 background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
             }
             .main{
                 width:938px;
                 height:500px;
-                border:2px solid rgb(0, 0, 0);
-                padding:0px;
             }
             .footer{
                 width:938px;
                 height:45px;
-                border:2px solid rgb(0, 0, 0);
-                padding:0px;
                 background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
 
             }
             .esquerda{
                 width:60px;
                 height:500px;
-                border:2px solid rgb(0, 0, 0);
                 display:inline-block;
                 float:right;
                 background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");      
@@ -44,7 +43,6 @@
              .centro{  
                 width:800px;
                 height:500px;
-                border:2px solid rgb(0, 0, 0);
                 display:inline-block;
                 float:right;
                 background-image: url("https://elementor.com/blog/wp-content/uploads/2021/12/Toward_an_Even_Better_Future.gif");
@@ -55,87 +53,71 @@
              .direita{
                 width:66px;
                 height:500px;
-                border:2px solid rgb(0, 0, 0);
                 display:inline;
                 float:right;
                 background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
             }
              
-                 </style>
-
-<script>
-     $(document).ready(function() {});
-          
-      alert("Anaile")
+        </style>
+        <script>
+            
 
 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="site">
+            <div class="header">
 
-  
-</script>
-
-    
-  </head>
- <body>
-    <div class="site">
-        <div class="header">
-
-        </div>
-        <div class="main">
-            <div class="esquerda">
-   
             </div>
-                <div class="centro">
-                        <fieldset>
-                                <legend>CALCULADORA</legend>
-                                <input type="number" id="campo">
-                        </br><br>
-                        <button id="btn_um">1</button>
-                        <button id="btn_dois">2</button>
-                        <button id="btn_tres">3</button>
-                        <button id="adicao">+</button>
-                        <button id="btn_porcentagem">%</button>
-                        </fieldset>
-                    </br></br
+            <div class="main">
+                <div class="esquerda">
 
-                           
+                </div>
+                <div class="centro">
+                    <fieldset>
+                        <legend>CALCULADORA</legend>
+                            <input type="number" id="campo">
+                            </br></br>
+                            <button id="btn_um">1</button>
+                            <button id="btn_dois">2</button>
+                            <button id="btn_tres">3</button>
+                            <button id="btn_adicao">+</button>
+                            <button id="btn_porcentagem">%</button>
+                            </br></br> 
                         <button id="btn_quatro">4</button>
                         <button id="btn_cinco">5</button>
-                        <button id="btn_seie">6</button>
-                        <button id="subtracao">-</button>
+                        <button id="btn_seis">6</button>
+                        <button id="btn_subtracao">-</button>
                         <button id="btn_potencia">^</button>
+                    </br></br>
+                    <button id="btn_sete">7</button>
+                    <button id="btn_oito">8</button>
+                    <button id="btn_nove">9</button>
+                    <button id="btn_divisao">/</button>
+                    <button id="btn_pa">(</button>
+                </br></br>
+                <button id="btn_ponto">.</button>
+                <button id="btn_zero">0</button>
+                <button id="btn_virgula">,</button>
+                <button id="btn_multiplicacao">x</button>
+                <button id="btn_pf">)</button>
 
 
-                  </br><br>
-                        <button id="btn_sete">7</button>
-                        <button id="btn_oito">8</button>
-                        <button id="btn_nove">9</button>
-                        <button id="divisao">/</button>
-                        <button id="btn_pa">(</button>
-
-
-                  </br><br>
-                        <button id="btn_ponto">.</button>
-                        <button id="btn_zero">0</button>
-                        <button id="btn_virgula">,</button>
-                        <button id="multiplicacao">x</button>
-                        <button id="btn_pf">)</button>
-
-
-                  </br><br>
-                        <button id="btn_limpar">C</button>
-                        <button id="btn_igual">=</button>
-
-
-                        </fieldset>
-
+            </br></br>
+            <button id="btn_limpar">C</button>
+            <button id="btn_igual">=</button>                
+                    </fieldset>
                 </div>
                 <div class="direita">
 
                 </div>
-    </div>
-        <div class="footer">
+            </div>
+            <div class="footer">
 
+            </div>
         </div>
-      </div>
- </body>
+    </body>
+
 </html>
