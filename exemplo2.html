@@ -1,231 +1,314 @@
- <!DOCTYPE html>
- <html lang="PT-BR">
-    <head>
-            <title></title>
-            <link rel=" stylesheet" type="text/css" href="">
-            <meta charset="utf-8">
-            <script src="jquery.js"></script>
-            <style>
-                    .site{
-                        width:1000px;
-                        height:700px;
-                        background-color:rgb(116, 68, 156) ;
-                    }
-                    .um{
-                        width:inherit;
-                        height:30px;
-                        background-color:rgb(189, 189, 189);
-                    }    
-                    .dois{
-                        width:inherit;
-                        height:100px;
-                        background-color: rgb(68, 62, 62);
-                    }
-                    .tres{
-                        width:inherit;
-                        height:30px;
-                        background-color:rgb(0, 0, 0);
-                    
-                    }
-                    .quatro{
-                        width:inherit;
-                        height:450px;
-                        background-color:rgb(132, 127, 136) ;
-                        background-image:url("https://i.pinimg.com/736x/d2/0a/72/d20a726673f8d4cf81ea09926dba53c9.jpg ") ;
-                    }
-                    .cinco{
-                        width:inherit;
-                        height:30px;
-                        background-color:rgb(83, 83, 83);
-                    }
-                    .seis{
-                        width:inherit;
-                        height:30px;
-                        background-color:rgb(34, 0, 97);
-                    }
-                    .sete{
-                        width:inherit;
-                        height:inherit;
-                        background-color:rgb(88, 0, 129);
-                    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thebas</title>
+<link rel="stylesheet" type="text/css" href="">
+<meta charset="UTF-8">
+<script src="jQuery.js"></script>
+<style>
+
+    .site{
+width:1000px ;
+height:700px ;
+background-image: linear-gradient(#000000,#6f349e,#3d0046,#ad34d1, #3d0049, #e76dff);
+
+}
+
+    .p1{
+      width:inherit ;
+      height:30px ;
+      background-color: rgb(0, 0, 0) ;
+
+}
+
+    .p2{
+      width:inherit ;
+      height:100px ;
+      background-color: rgb(81, 0, 105) ;
+
+}
+
+    .p3{
+      width:inherit ;
+      height:30px ;
+      background-color: rgb(52, 0, 95) ;
+
+}
+
+    .p4{
+      width:inherit ;
+      height:450px ;
+      background-color: rgb(127, 22, 168) ;
+      background-image: url("https://i.pinimg.com/736x/d2/0a/72/d20a726673f8d4cf81ea09926dba53c9.jpg")
+}
+
+    .p5{
+      width:inherit ;
+      height:30px ;
+      background-color: rgb(146, 13, 255) ;
+
+}
+
+    .p6{
+      width:inherit ;
+      height:30px ;
+      background-color: rgb(95, 0, 63) ;
+
+}
+
+    .p7{
+      width:inherit ;
+      height:30px ;
+      background-color: rgb(234, 0, 255) ;
+
+}
 
 
-                    .um1{
-                        width:33.3%;
-                        height:inherit;
-                        background-color:rgb(66, 0, 151);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .um2{
-                        width:33.3%t;
-                        height:inherit;
-                        background-color:rgb(46, 0, 121);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .um3{
-                        width:33.3%;
-                        height:inherit;
-                        background-color:rgb(20, 0, 75);
-                        display:inline-block;
-                        float: right;
-                    }
-                    .dois1{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(16, 0, 75);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .dois2{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(140, 0, 255);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .dois3{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(89, 0, 190);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .dois4{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(60, 0, 139);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .dois5{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(48, 0, 104);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .tres1{
-                        width:33.3%;
-                        height:inherit;
-                        background-color:rgb(0, 0, 0);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .tres2{
-                        width:33.3%;
-                        height:inherit;
-                        background-color:rgb(22, 0, 58);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .tres3{
-                        width:33.3%;
-                        height:inherit;
-                        background-color:rgb(90, 0, 126);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .cinco1{
-                        width:25%;
-                        height:inherit;
-                        background-color:rgb(153, 0, 153);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .cinco2{
-                        width:25%;
-                        height:inherit;
-                        background-color:rgb(0, 0, 0);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .cinco3{
-                        width:25%;
-                        height:inherit;
-                        background-color:rgb(255, 255, 255);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .cinco4{
-                        width:25%;
-                        height:inherit;
-                        background-color:rgb(27, 0, 90);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .sete1{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(28, 0, 44);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .sete2{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(198, 129, 255);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .sete3{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(187, 129, 253);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .sete4{
-                        width:20%t;
-                        height:inherit;
-                        background-color:rgb(116, 44, 150);
-                        display:inline-block;
-                        float:right;
-                    }
-                    .sete5{
-                        width:20%;
-                        height:inherit;
-                        background-color:rgb(0, 0, 0);
-                        display:inline-block; 
-                        float:right;
-                    }
-            </style>
-        </head> 
-        <body>
-            <div class="site">
-                <div class="um">
-                    <div class="um1"></div>
-                    <div class="um2"></div>
-                    <div class="um3"></div>
-                </div>
-                <div class="dois">
-                    <div class="dois1"></div>
-                    <div class="dois2"></div>
-                    <div class="dois3"></div>
-                    <div class="dois4"></div>
-                    <div class="dois5"></div>
-                </div>
-                <div class="tres">
-                    <div class="tres1"></div>
-                    <div class="tres2"></div>
-                    <div class="tres3"></div>
-                </div>
-                <div class="quatro"></div>
-                <div class="cinco">
-                    <div class="cinco1"></div>
-                    <div class="cinco2"></div>
-                    <div class="cinco3"></div>
-                    <div class="cinco4"></div>
-                </div>
-                <div class="seis"></div>
-                <div class="sete">
-                    <div class="sete1"></div>
-                    <div class="sete2"></div>
-                    <div class="sete3"></div>
-                    <div class="sete4"></div>
-                    <div class="sete5"></div>
-                </div>
-            </div>
-        </body>
- </html>
+
+
+    .um1{
+        width:20%;
+        height:inherit;
+        background-color: rgb(0, 20, 133) ;
+        display: inline-block;
+        float:left;
+
+    }
+    .um2{
+        width:5%;
+        height:inherit;
+        background-color: rgb(199, 116, 255) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .um3{
+        width:5%;
+        height:inherit;
+        background-image: rgb(217, 92, 255) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .dois1{
+        width:10%;
+        height:inherit;
+        background-image:url(https://i.pinimg.com/736x/69/b9/7a/69b97a5d04f9d416f45511804f123caa.jpg);
+        display: inline-block;
+        float:left;
+        border-radius:100%;
+        margin-left: 5%;
+        border: 2px solid magenta;
+
+
+    }
+    .dois2{
+        width:10%;
+        height:inherit;
+        background-image: url(https://i.pinimg.com/736x/d5/4a/c4/d54ac4f2ae8a7b1f93ec0384de719a1c.jpg) ;
+        display: inline-block;
+        float:left;
+        border-radius:100%;
+        margin-left: 5%;
+        border: 2px solid magenta;
+
+
+
+    }
+    .dois3{
+        width:10%;
+        height:inherit;
+        background-image: url(https://i.pinimg.com/736x/8d/e5/f8/8de5f84b28883529fceea4b4d61ef2b6.jpg);
+        display: inline-block;
+        float:left;
+        border-radius:100%;
+        margin-left: 5%;
+        border: 2px solid greenyellow;
+
+
+    }
+    .dois4{
+        width:10%;
+        height:inherit;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJTA-LMQVopKqabLPnlaecgIaVyYCxDjXNA&s) ;
+        display: inline-block;
+        float:left;
+        border-radius:100%;
+        margin-left: 5%;
+        border: 2px solid magenta;
+
+
+    }
+    .dois5{
+        width:10%;
+        height:inherit;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAgdXYS-dU4U_hwNrdNQI1LZWzNgzaGliK5obrOtJQY9dhG3vHN1ocda5oe5QYpRn5vSQ&usqp=CAU) ;
+        display: inline-block;
+        float:left;
+        border-radius:100%;
+        margin-left: 5%;
+        border: 2px solid greenyellow;
+
+
+
+    }
+    .tres1{
+        width:30%;
+        height:inherit;
+        background-color: rgb(218, 96, 255) ;
+        display: inline-block;
+        float:right;
+
+
+
+    }
+    .tres2{
+        width:33%;
+        height:inherit;
+        background-color: rgb(172, 35, 252) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .tres3{
+        width:34%;
+        height:inherit;
+        background-color: rgb(56, 0, 129) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .cinco1{
+        width:5%;
+        height:inherit;
+        background-color: rgb(82, 0, 136) ;
+        display: inline-block;
+        float:left;
+
+
+    }
+    .cinco2{
+        width:5%;
+        height:inherit;
+        background-color: rgb(30, 0, 70) ;
+        display: inline-block;
+        float:left;
+
+
+    }
+    .cinco3{
+        width:5%;
+        height:inherit;
+        background-color: rgb(166, 86, 197) ;
+        display: inline-block;
+        float:left;
+
+
+    }
+    .cinco4{
+        width:5%;
+        height:inherit;
+        background-color: rgb(8, 2, 90) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .sete1{
+        width:20%;
+        height:inherit;
+        background-color: rgb(164, 31, 253) ;
+        display: inline-block;
+        float:right;
+
+ 
+    }
+    .sete2{
+        width:20%;
+        height:inherit;
+        background-color: rgb(0, 0, 0) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .sete3{
+        width:20%;
+        height:inherit;
+        background-color: rgb(173, 47, 247) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .sete4{
+        width:20%;
+        height:inherit;
+        background-color: rgb(0, 0, 0) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+    .sete5{
+        width:20%;
+        height:inherit;
+        background-color: rgb(114, 0, 143) ;
+        display: inline-block;
+        float:right;
+
+
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div class="site">
+    <div class="p1">
+        <div class="um1"></div>
+        <div class="um2"></div>
+        <div class="um3"></div>
+     
+    </div>
+    <div class="p2">
+        <div class="dois1" ></div>
+        <div class="dois2"></div>
+        <div class="dois3"></div>
+        <div class="dois4"></div>
+        <div class="dois5"></div>
+       
+    </div>
+    <div class="p3">
+        <div class="tres1"></div>
+        <div class="tres2"></div>
+        <div class="tres3"></div>
+
+    </div>
+    <div class="p4"></div>
+    <div class="p5">
+        <div class="cinco1"></div>
+        <div class="cinco2"></div>
+        <div class="cinco3"></div>
+        <div class="cinco4"></div>
+
+    </div>
+    <div class="p6"></div>
+    <div class="p7">
+        <div class="sete1"></div>
+        <div class="sete2"></div>
+        <div class="sete3"></div>
+        <div class="sete4"></div>
+        <div class="sete5"></div>
+    </div>
+        </div>
+</body>
+</html>
+
