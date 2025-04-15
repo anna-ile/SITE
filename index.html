@@ -13,111 +13,46 @@
             });
             </script>
             <style> 
-            .site{
-                width:940px;
-                height:600px;
-                
-            }
-            .header{
-                width:938px;
-                height:50px;
-                background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
-            }
-            .main{
-                width:938px;
-                height:500px;
-            }
-            .footer{
-                width:938px;
-                height:45px;
-                background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
-
-            }
-            .esquerda{
-                width:60px;
-                height:500px;
-                display:inline-block;
-                float:right;
-                background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");      
-              }
-             .centro{  
-                width:800px;
-                height:500px;
-                display:inline-block;
-                float:right;
-                background-image: url("https://elementor.com/blog/wp-content/uploads/2021/12/Toward_an_Even_Better_Future.gif");
-
-
-             }
-
-             .direita{
-                width:66px;
-                height:500px;
-                display:inline;
-                float:right;
-                background-image: url("https://img.freepik.com/fotos-premium/estrelas-douradas-de-folha-de-confete-em-um-fundo-preto_213524-664.jpg?w=1380");
-            }
-             
-        </style>
-        <script>
             
+        </style>
 
-
-            });
-        </script>
-    </head>
-    <body>
-        <div class="site">
-            <div class="header">
-
-            </div>
-            <div class="main">
-                <div class="esquerda">
-
-                </div>
-                <div class="centro">
+                    </head>
+                    <body>
+        
                     <fieldset>
                         <legend>CALCULADORA</legend>
-                            <input type="number" id="campo">
+                            <input type="text" id="visor">
                             </br></br>
-                            <button id="btn_um">1</button>
-                            <button id="btn_dois">2</button>
-                            <button id="btn_tres">3</button>
-                            <button id="btn_adicao">+</button>
-                            <button id="btn_porcentagem">%</button>
+                            <button id="btn_um" onclick="adicionar('1')">1</button>
+                            <button id="btn_dois" onclick="adicionar('2')">2</button>
+                            <button id="btn_tres" onclick="adicionar('3')">3</button>
+                            <button id="btn_adicao" onclick="adicionar('+')">+</button>
+                            <button id="btn_porcentagem" onclick="adicionar('%')">%</button>
                             </br></br> 
-                        <button id="btn_quatro">4</button>
-                        <button id="btn_cinco">5</button>
-                        <button id="btn_seis">6</button>
-                        <button id="btn_subtracao">-</button>
-                        <button id="btn_potencia">^</button>
+                        <button id="btn_quatro" onclick="adicionar('4')">4</button>
+                        <button id="btn_cinco" onclick="adicionar('5')">5</button>
+                        <button id="btn_seis" onclick="adicionar('6')">6</button>
+                        <button id="btn_subtracao" onclick="adicionar('-')">-</button>
+                        <button id="btn_potencia" onclick="adicionar('^')">^</button>
                     </br></br>
-                    <button id="btn_sete">7</button>
-                    <button id="btn_oito">8</button>
-                    <button id="btn_nove">9</button>
-                    <button id="btn_divisao">/</button>
-                    <button id="btn_pa">(</button>
+                    <button id="btn_sete" onclick="adicionar('7')">7</button>
+                    <button id="btn_oito" onclick="adicionar('8')">8</button>
+                    <button id="btn_nove" onclick="adicionar('9')">9</button>
+                    <button id="btn_divisao" onclick="adicionar('/')">/</button>
+                    <button id="btn_pa" onclick="adicionar('')">(</button>
                 </br></br>
-                <button id="btn_ponto">.</button>
-                <button id="btn_zero">0</button>
-                <button id="btn_virgula">,</button>
-                <button id="btn_multiplicacao">x</button>
-                <button id="btn_pf">)</button>
+                <button id="btn_ponto" onclick="adicionar('.')">.</button>
+                <button id="btn_zero" onclick="adicionar('0')">0</button>
+                <button id="btn_virgula" onclick="adicionar(',')">,</button>
+                <button id="btn_multiplicacao" onclick="adicionar('*')">x</button>
+                <button id="btn_pf" onclick="adicionar('')">)</button>
 
 
             </br></br>
-            <button id="btn_limpar">C</button>
-            <button id="btn_igual">=</button>                
+            <button id="btn_limpar"Limpar()>C</button>
+            <button id="btn_igual"calcular()>=</button>                
                     </fieldset>
-                </div>
-                <div class="direita">
-
-                </div>
-            </div>
-            <div class="footer">
-
-            </div>
-        </div>
+                
     </body>
 
 </html>
