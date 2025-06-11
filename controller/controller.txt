@@ -1,59 +1,152 @@
-// comando // cria comentarios. 
-// comentarios servem para deixar os codigos organizados 
+// comando "//" cria comentarios.
+// comentários servem para deixar os códigos organizados
 
-//javacript é case sensitive (diferencia letras maiusculas de letreas minusculas)
+// javascript é case sensitive (diferencia letras maiusculas de letras minusculas)
 
-// variaveis servem para armazenaer informacoes.
-// elas são orgnanizadas em string, int, boolean, etc.
-// comando que cria variaveis é o let, porém é possivél também usar o "const". 
-// para mostar alguma coisa na tela, é usada o codigo "console.log();"
+// variaveis servem para armazenar informações.
+// elas são organizadas em string, int, boolean, etc.
+// comando que cria variaveis é o "let", porém é possível também usar o "const".
+// para mostrar alguma coisa na tela, é usado codigo "console.log();"
 
-//variaveis do tipo string 
+// variaveis do tipo string
 let idade = "dezessete anos";
 let complemento = " de idade";
-console.log (idade+complemento);
+console.log(idade+complemento);
 
-// variaveis do tipo inteiro 
+// variaveis do tipo inteiro
 let altura = 165;
-altura -= 5;
+ altura /= 2;
+ 
+ console.log(altura);
+ 
+ // variaveis do tipo booleano
+ let numero1 = 11;
+ let numero2 = 9;
+ let numero3 = 8;
+ 
+ console.log(numero1===numero3);
+ 
+ // trabalhando com condicionais
+ if(numero1==10){
+     console.log("o numero vale 10");
+ }else{
+     console.log("o numero1 é diferente de 10");
+     }
+     
+     // Questao1 -> Sabe-se que as pessoas abaixo de 16 anos nao podem votar, as pessoas com idade entre 16 e 18 anos possuem voto facultativo, as pessoas com idade entre 18 e 70 anos tambem possuem voto facultativo, faça um codigo que diga atraves de idade, a condiçao de voto dela.
+     
+     // codigo e = "&&"
+     // codigo ou = "||"
+     
+     let idadex = 10;
+     
+     if( idadex < 16){
+         console.log("Eleitor não pode votar");
+     }else if(idadex>=16 && idade <= 70){
+         console.log("Eleitor é obrigado a votar");
+     }else if(idadex >= 16 && idadex < 18 && idadex >70){
+         console.log("Eleitor possui voto facultativo");
+     }
 
-console.log(altura);
+     // Questao2-> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um codigo que verifique os numeros apostados e os numeros sorteados e diga se o apostador ganhou na quadra, quina ou sena.
 
-// variaveis do tipo boleano
-let numero1 = 10; 
-let numero2 = 9;
-let numero3 = 10; 
+//declarando variaveis dos numeros sorteados
+    let numsort1;
+    let numsort2;
+    let numsort3;
+    let numsort4;
+    let numsort5;
+    let numsort6;
+    
+// declarando as variaveis dos numeros apostados
+    let numapos1;
+    let numapos2;
+    let numapos3;
+    let numapos4;
+    let numapos5;
+    let numapos6;
+    
+// vericando de dezena sorteada 
+let dezena1;
+let dezena2;
+let dezena3;
+let dezena4;
+let dezena5;
+let dezena6;
 
-console.log(numero1===numero2);
-
-// trabalhando com condicionais
-if(numero1==10){
-    console.log("o numero1 vale 10");
-}else{
-    console.log("o numero1 é diferente de 10");
-}    
-
-// Questao1 -> Sabe-se que as pessoas abaixo de 16 anos não podem votar, as pessoas co idade entre 16 e 18 possuem voto facultativo, as pessoas scom idade entre 18 e 70 anos possuem voto obrigatorio e as pessoas com idade acima de 70 anos tambem possuem votos facultavivos. Faça um codigo que diga atraves da idade, a condição de voto dela
-
-// codigo e = "&&"
-// codigo ou = "||"
-
-let idadex = 16;
-
-if( idadex < 16){
-  console.log ("Eleitor nao pode votar");
-} else if (idadex>= 16 && idade <= 70){
-    console.log ("Eleitor é obrigatorio a votar");
-} else if (idadex >= 16 && idadex < 18 && idadex >70){
-    console.log ("Eleitor possui voto facultativo");
+// verificando numero 1
+if(numapos1 == numsort1 || 
+    numapos1 == numsort2 || 
+    numapos1 == numsort3 || 
+    numapos1 == numsort4 || 
+    numapos1 == numsort5 || 
+    numapos1 == numsort6){
+        
+    dezena1 = 0 ;
+    console.log(dezena1);
+    
+}
+// verificando numero 2
+if(numapos2 == numsort1 || 
+    numapos2 == numsort2 || 
+    numapos2 == numsort3 || 
+    numapos2 == numsort4 || 
+    numapos2 == numsort5 || 
+    numapos2 == numsort6){
+        
+    dezena2 = 0 ;
+    console.log(dezena2);
+    
+}
+// verificando numero 3
+if(numapos3 == numsort1 || 
+    numapos3 == numsort2 || 
+    numapos3 == numsort3 || 
+    numapos3 == numsort4 || 
+    numapos3 == numsort5 || 
+    numapos3 == numsort6){
+        
+    dezena3 = 0 ;
+    console.log(dezena3);
+    
+}
+// verificando numero 4
+if(numapos4 == numsort1 || 
+    numapos4 == numsort2 || 
+    numapos4 == numsort3 || 
+    numapos4 == numsort4 || 
+    numapos4 == numsort5 || 
+    numapos4 == numsort6){
+        
+    dezena4 = 0 ;
+    console.log(dezena4);
+    
+}
+// verificando numero 5
+if(numapos5 == numsort1 || 
+    numapos5 == numsort2 || 
+    numapos5 == numsort3 || 
+    numapos5 == numsort4 || 
+    numapos5 == numsort5 || 
+    numapos5 == numsort6){
+        
+    dezena5 = 0 ;
+    console.log(dezena5);
+    
+}
+// verificando numero 6
+if(numapos6 == numsort1 || 
+    numapos6 == numsort2 || 
+    numapos6 == numsort3 || 
+    numapos6 == numsort4 || 
+    numapos6 == numsort5 || 
+    numapos6 == numsort6){
+        
+    dezena6 = 0 ;
+    console.log(dezena6);
+    
 }
 
-// Questao 2 -> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milharres de pessoas apostam sonhando com a chance de mudar de vida.Faça um codigo que verifique os numeros apostadosn en sorteados e diga se o apostador ganhou na quadra, quina oun sena.
-}
-   
-   
-   
-   
-   
-   
-   
+
+
+
