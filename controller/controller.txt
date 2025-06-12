@@ -51,20 +51,20 @@ let altura = 165;
      // Questao2-> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um codigo que verifique os numeros apostados e os numeros sorteados e diga se o apostador ganhou na quadra, quina ou sena.
 
 //declarando variaveis dos numeros sorteados
-    let numsort1;
-    let numsort2;
-    let numsort3;
-    let numsort4;
-    let numsort5;
-    let numsort6;
+    let numsort1 = 17;
+    let numsort2 = 22;
+    let numsort3 = 45;
+    let numsort4 = 10;
+    let numsort5 = 34;
+    let numsort6 = 05;
     
 // declarando as variaveis dos numeros apostados
-    let numapos1;
-    let numapos2;
-    let numapos3;
-    let numapos4;
-    let numapos5;
-    let numapos6;
+    let numapos1 = 1;
+    let numapos2 = 2;
+    let numapos3 = 5;
+    let numapos4 = 1;
+    let numapos5 = 3;
+    let numapos6 = 0;
     
 // vericando de dezena sorteada 
 let dezena1;
@@ -105,6 +105,7 @@ if(numapos3 == numsort1 ||
     numapos3 == numsort4 || 
     numapos3 == numsort5 || 
     numapos3 == numsort6){
+        
         
     dezena3 = 0 ;
     console.log(dezena3);
@@ -147,6 +148,150 @@ if(numapos6 == numsort1 ||
     
 }
 
+if(dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 ){
+        console.log("Maravilha, estou rico!!")
+}else if(
+    
+    dezena1 != 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
 
 
+}else if(
+    
+    dezena1 == 0 && dezena2 != 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
+}else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 != 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
+}else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 != 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
+}else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 != 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
+}else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quina, estou quase rico!!")
+    
+}
+
+
+
+// DECLARANDO A QUADRA 
+
+
+else if(
+    
+    dezena1 != 0 && dezena2 != 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}else if(
+    
+    dezena1 != 0 && dezena2 == 0 && dezena3 != 0 && dezena4 == 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 != 0 && dezena2 == 0 && dezena3 == 0 && dezena4 != 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 != 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 != 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 != 0 && dezena3 != 0 && dezena4 == 0 && dezena5 == 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 != 0 && dezena3 == 0 && dezena4 != 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 != 0 && dezena3 == 0 && dezena4 == 0 && dezena5 != 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 != 0 && dezena3 == 0 && dezena4 == 0 && dezena5 == 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 != 0 && dezena4 != 0 && dezena5 == 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 != 0 && dezena4 == 0 && dezena5 != 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 != 0 && dezena4 == 0 && dezena5 == 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 != 0 && dezena5 != 0 && dezena6 == 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 != 0 && dezena5 == 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}
+else if(
+    
+    dezena1 == 0 && dezena2 == 0 && dezena3 == 0 && dezena4 == 0 && dezena5 != 0 && dezena6 != 0 
+){ 
+    console.log ("Ganhei na quadra")
+    
+}else{
+    console.log("Quero meu dinheiro de volta, estou sem sorte!!")
+}
 
